@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option csharp_namespace = "FateAnotherJassReplacement.Models";
+
+message ConfigItem {
+  string name = 1;
+  int32 lines = 2;
+  string searchText = 3;
+  bytes datas = 4;
+}
+
+message ConfigItems {
+  repeated ConfigItem configItems = 1;
+}
